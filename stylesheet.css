@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 25px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.weather-icon {
+  width: 60px;
+  height: 60px;
+}
+
+input[type="text"] {
+  height: 30px;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 14px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.weather-list{
+  border: 1px solid #ccc;
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+  padding: 5px;
+  margin:10px auto;
+}
+
+.history-list{
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 200px;
+  overflow: auto;
+  padding: 5px;
+  margin: 10px auto;
+}
+
+.history-list li {
+    cursor: pointer;
+    padding: 4px 8px;        
+}
+
+.history-list li:hover {
+    background: #f0f0f0;
+  }
+
+.history-list li:selected{
+  background-color: lightblue;
+  font-weight: bold;
+}
