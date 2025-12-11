@@ -7,30 +7,34 @@
         <link rel="stylesheet" href="stylesheet.css">
     </head>
 
-
-    <body>
+<body>
+    <div class="container">
         <h1>天気予報アプリ</h1>
 
-        <div>
+        <div class="search-section">
             <input type="text" id="city_input" placeholder="都市名を入力">
             <button id="search_btn">検索</button>
         </div>
-        
-        <div id="weather_result">
-            <p id="city-name">都市名: -</p>
-            <p id="weather-desc">天気: -</p>
-            <p id="temp">気温: - ℃</p>
-            <p id="humidity">湿度: - %</p>
-            <p id="umi">海: - Lv</p>
-            <p id="wind">風速: -</p>
-            <img id="weather-icon" class="weather-icon" src="" alt=""/>
+
+        <div id="weather_result" class="weather-result">
+            <h2 id="city-name">都市名: -</h2>
+            <div class="weather-details">
+                <p id="city-name">都市名: -</p>
+                <p id="weather-desc">天気: -</p>
+                <p id="temp">気温: - ℃</p>
+                <p id="humidity">湿度: - %</p>
+                <p id="umi">海: - Lv</p>
+                <p id="wind">風速: -</p>
+            </div>
+            <img id="weather-icon" class="weather-icon" src="" alt="" />
         </div>
-        
+
         <h3>検索履歴</h3>
         <ul id="history-list" class="history-list"></ul>
-        
-        <button id="delete-history">削除</button>
-        
+
+        <button id="delete-history" class="delete-history-btn">削除</button>
+    </div>
+
         <script src="weathor.js"></script>
     </body>
     

@@ -85,6 +85,7 @@ function updateHistoryOfDisp(history, favoriteHistory){
         // 削除ボタン押下処理
         const deleteBtn = document.createElement("button");
         deleteBtn.textContent = "✖";
+        deleteBtn.classList.add("rireki-btn");
         deleteBtn.addEventListener("click", function(e){
             e.stopPropagation();
 
@@ -108,6 +109,7 @@ function updateHistoryOfDisp(history, favoriteHistory){
         }else{
             favoriteBtn.textContent = "★";
         }
+        favoriteBtn.classList.add("rireki-btn");
         
         // お気に入りボタン押下処理
         favoriteBtn.addEventListener("click", (e) => {
