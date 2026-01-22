@@ -26,7 +26,11 @@ h1 {
 }
 
 .search-section {
-  margin-bottom: 25px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 input[type="text"] {
@@ -34,13 +38,21 @@ input[type="text"] {
   font-size: 1em;
   border: 2px solid #b3e5fc;
   border-radius: 8px;
-  margin-right: 10px;
+  margin-right: 0;
   width: calc(70% - 20px);
   max-width: 300px;
+  box-shadow: 0 2px 6px rgba(2, 136, 209, 0.08);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 input[type="text"]::placeholder {
   color: #90caf9;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #64b5f6;
+  box-shadow: 0 0 0 3px rgba(100, 181, 246, 0.25);
 }
 
 button {
@@ -51,11 +63,18 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
   background-color: #0288d1; /* 濃い青 */
+  transform: translateY(-1px);
+}
+
+.search-note {
+  margin: 0 0 16px 0;
+  font-size: 0.85em;
+  color: #607d8b;
 }
 
 .weather-result {
@@ -129,7 +148,7 @@ h3 {
   color: #0288d1;
 }
 
-.rireki-btn{
+.rireki-btn {
   padding: 2px 6px;
   font-size: 0.7em;
   width: 24px;
@@ -140,11 +159,10 @@ h3 {
   color: #fff;
   cursor: pointer;
   margin: 0px 5px;
-
-.rireki-btn:hover{
-  color: #0288d1;
 }
 
+.rireki-btn:hover {
+  color: #0288d1;
 }
 
 .delete-history-btn {
